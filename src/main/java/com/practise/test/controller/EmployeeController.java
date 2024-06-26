@@ -72,6 +72,7 @@ public class EmployeeController {
 	
 	//delete employee rest api 
 	
+	@CrossOrigin(origins = "http://localhost:4200")
 	@DeleteMapping("/employees/{id}")
 	public ResponseEntity<Map<String, Boolean>> deleteEmployee(@PathVariable Long id)
 	{
