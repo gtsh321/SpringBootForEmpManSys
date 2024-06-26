@@ -45,6 +45,7 @@ public class EmployeeController {
 	
 	//get employee by id rest api 
 	
+	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping("/employees/{id}")
 	public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id)
 	{
@@ -54,6 +55,7 @@ public class EmployeeController {
 	
 	//update employee rest api 
 	
+	@CrossOrigin(origins = "http://localhost:4200")
 	@PutMapping("/employees/{id}")
 	public ResponseEntity<Employee> updateEmployee(@PathVariable Long id, @RequestBody Employee employee)
 	{
